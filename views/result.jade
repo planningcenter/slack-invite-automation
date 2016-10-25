@@ -7,9 +7,13 @@ html
     link(href="css/style.css", rel="stylesheet", type="text/css")
     link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic", rel="stylesheet", type="text/css")
   body
-    #wrapper
+    #wrapper.wrapper-result
+
       .main
-        .header
-          h1
-            strong #{community}
-          h2(class="#{isFailed?'error':''}") !{message}
+        .full-shelf.full-shelf--branded
+          .header.content-center-block
+            h1
+              strong.text.visually-hidden Planning Center
+              img.pc-logo(src="images/planning-center-logo.png" alt="Planning Center")
+
+            h2.mt-0(class="#{isFailed?'error':''}") !{message}

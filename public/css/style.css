@@ -258,3 +258,18 @@ a:hover {
 		padding: 40px 20px;
 	}
 }
+
+
+/*---------------------------------------------------------------*/
+.wrapper-result{
+	background: #3965C6;
+	height: 100%;
+}
+
+.wrapper-result .main{
+	padding: 70px 40px;
+}
+
+.mt-0{
+	margin-top: 0 !important;
+}
