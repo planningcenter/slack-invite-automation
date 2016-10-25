@@ -79,7 +79,7 @@ width: 100%;
 
 .full-shelf.full-shelf--branded{
 	background: #3965C6;
-	padding: 70px 40px;
+	padding: 9vh 40px;
 }
 
 .disclaimer{
@@ -241,4 +241,20 @@ a {
 a:visited,
 a:hover {
   color: #7EB6FF;
+}
+
+
+@media (max-height: 801px) and (max-width: 1281px)  {
+	.main .header{
+		margin-bottom: 10px;
+	}
+	.main .full-shelf{
+		padding: 50px 20px;
+	}
+	.main .pc-logo{
+		margin: 15px auto 20px;
+	}
+	.main .full-shelf--branded{
+		padding: 40px 20px;
+	}
 }
