@@ -296,8 +296,16 @@ a:hover {
 	margin: 0 10px;
 }
 
-.wrapper-result h2{
+.wrapper-result .header h2{
 	font-weight: 400;
 	color: #fff;
 	font-size: 22px;
+}
+
+.wrapper-result a,
+.wrapper-result a:visited{
+	color: #a4c0ff;
+}
+.wrapper-result a:hover{
+	color: #dae5ff;
 }
