@@ -38,8 +38,24 @@ width: 100%;
 	margin-bottom: 40px;
 }
 
-.header h1, .header p{
+.header h1, .header p, .header h2{
 	color: #fff;
+}
+
+.header h2{
+	margin: 7em auto 0.8em;
+	font-size: 18px;
+	color: #b2caff;
+}
+
+.header p{
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.header p.quiet-text{
+	font-size: 14px;
+  color: #b2caff;
 }
 
 .full-shelf{
@@ -82,7 +98,6 @@ li, p{
 }
 
 .information{
-width: 480px;
 padding-top: 35px;
 margin: 0 auto;
 }
@@ -124,7 +139,8 @@ margin-top: 20px;
 
 .field{
 background: rgba(255, 255, 255, 0.9);
-width: 448px;
+width: 100%;
+box-sizing: border-box;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
 font-family: 'Lato', sans-serif;
