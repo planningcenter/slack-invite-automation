@@ -5,23 +5,64 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title #{__('TITLE', community)}
     link(href="css/style.css", rel="stylesheet", type="text/css")
-    link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
+    link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic", rel="stylesheet", type="text/css")
   body
     #wrapper
       .main
-        .header
-          h1
-            strong Planning Center
-          p The Planning Center community on Slack is a great way for churches to share advice and connect with each other using chat. If you have a part in implementing any Planning Center app at your church, sign up to join the conversation!
-          h2 NEED OFFICIAL SUPPORT?
-          p If you want official Planning Center support, click the ? in the top right of any Planning Center app, or submit a ticket from [our support site.](https://support.planningcenteronline.com/hc/en-us)
-        .content
-          .information
-            form(method="POST", action="/invite")#join-form.form
-              input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
-              if tokenRequired
-                input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-              input(type="submit", value="Join").submit
+        .full-shelf.full-shelf--branded
+          .header.content-center-block
+            h1
+              strong Planning Center
+            p The Planning Center community on Slack is a great way for churches to share advice and connect with each other using chat. If you have a part in implementing any Planning Center app at your church, sign up to join the conversation!
+
+            .content
+              .information
+                form(method="POST", action="/invite")#join-form.form
+                  input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+                  if tokenRequired
+                    input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+                  input(type="submit", value="Join").submit
+
+            h2
+              strong NEED OFFICIAL SUPPORT?
+            p If you want official Planning Center support, click the ? in the top right of any Planning Center app, or submit a ticket from #[a(href="https://support.planningcenteronline.com/hc/en-us") our support site].
+
+        .full-shelf
+          .faq.content-center-block
+            h1
+              strong FAQ
+            h2
+              strong I’m New, What do I do?
+            ul.list.list--number
+              li Download the Slack app, if you don't already have it.
+              li When you receive your invitation via email, sign into the app! You can choose your own adventure by muting or leaving them (click on the channel name, and then the gear icon). Click on Channels to see a full list of what’s out there.
+              li Head over to #introductions and let everyone know who you are, where you're from, and which Planning Center apps you use. By sharing your areas of expertise and interests, your fellow members know what to come to you for.
+              li Then, check out all of the channel options, and join whichever ones you'd like. We've created app-specific channels, as well as channels for you to connect to churches in your area.
+
+            h2
+              strong What’s This All About?
+            p We have three loves here at Planning Center. We love our team, we love technology, and we love our customers. This Slack experiment is giving an opportunities for our customers to chat with each other, and help each other out. We'll poke our heads in there from time to time, and possibly even schedule some AMA's (Ask My Anything) with certain product managers and the leadership team.
+
+            h2
+              strong Rules of Engagement
+            p Let's all remember to treat each other right! That means no offensive language, objectionable content, or general un-constructive criticism with each other. We'll always give you the benefit of the doubt --- if we see something that we think isn't appropriate we reserve the right to remove members at our discretion.
+
+            h2
+              strong What If I Have a Support-Related Question? Can I Get Help Here?
+            p This Slack community wasn't designed for support issues. We have a super friendly and knowledgable team that you can easily contact by clicking the [?] at the top right of any of our apps.
+
+            h2
+              strong Any General Ways I Can Contribute To The Community?
+            ul.list.list--bullet
+              li Share Planning Center best practices and pro tips
+              li Post pictures or plans of your church layout (for Check-Ins or Services)
+              li Ask questions about how other folks are using our features
+              li Offer your own productivity tips
+              li Link to any relevant articles you've enjoyed about productivity, workflows, etc...
+
+            h2.finale
+              strong Thanks for reading to the end. You rock!
+
     script.
       var tokenRequired = #{tokenRequired};
       var form = document.getElementById('join-form');
