@@ -12,7 +12,8 @@ html
         .full-shelf.full-shelf--branded
           .header.content-center-block
             h1
-              strong Planning Center
+              strong.text.visually-hidden Planning Center
+              img.pc-logo(src="images/planning-center-logo.png" alt="Planning Center")
             p The Planning Center community on Slack is a great way for churches to share advice and connect with each other using chat. If you have a part in implementing any Planning Center app at your church, sign up to join the conversation!
 
             .content
@@ -23,11 +24,13 @@ html
                     input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
                   input(type="submit", value="Join").submit
 
-            h2 Need Official Support?
-            p.quiet-text If you want official Planning Center support, click the ? in the top right of any Planning Center app, or submit a ticket from #[a(href="https://support.planningcenteronline.com/hc/en-us") our support site].
 
         .full-shelf
           .faq.content-center-block
+            .disclaimer
+              h2 Need Official Support?
+              p.quiet-text If you want official Planning Center support, click the ? in the top right of any Planning Center app, or submit a ticket from #[a(href="https://support.planningcenteronline.com/hc/en-us") our support site].
+
             h1
               strong FAQ
             h2
