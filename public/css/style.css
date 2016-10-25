@@ -24,7 +24,7 @@ margin: 0 auto;
 
 .content-center-block{
 	max-width: 100%;
-	max-width: 620px;
+	max-width: 580px;
 	margin: 0 auto;
 }
 
@@ -39,8 +39,11 @@ width: 100%;
 }
 
 .pc-logo{
-	max-width: 300px;
-	margin: 20px auto 40px;
+	max-width: 190px;
+	margin: 0;
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 
 .visually-hidden{
@@ -66,6 +69,10 @@ width: 100%;
 .header p{
 	font-weight: 100;
 	font-size: 18px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.4;
 }
 
 .header p.quiet-text{
@@ -79,7 +86,7 @@ width: 100%;
 
 .full-shelf.full-shelf--branded{
 	background: #3965C6;
-	padding: 9vh 40px;
+	padding: 9vh 40px 8vh;
 }
 
 .disclaimer{
@@ -166,8 +173,11 @@ display: block;
 
 .form{
 position: relative;
-max-width: 620px;
+max-width: 520px;
 margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 
@@ -252,10 +262,13 @@ a:hover {
 		padding: 50px 20px;
 	}
 	.main .pc-logo{
-		margin: 15px auto 20px;
+		top: 30px;
+		left: 50%;
+		margin-left: -95px;
 	}
 	.main .full-shelf--branded{
-		padding: 40px 20px;
+		padding: 90px 20px 40px;
+		position: relative;
 	}
 }
 
@@ -272,4 +285,9 @@ a:hover {
 
 .mt-0{
 	margin-top: 0 !important;
+}
+
+.alt-font{
+	font-family: arial, sans-serif;
+	margin: 0 10px;
 }
