@@ -22,11 +22,12 @@ html
 
             .content
               .information
-                form(method="POST", action="/invite")#join-form.form
-                  input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
-                  if tokenRequired
-                    input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
-                  input(type="submit", value="Join").submit
+                //- form(method="POST", action="/invite")#join-form.form
+                //-   input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+                //-   if tokenRequired
+                //-     input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
+                //-   input(type="submit", value="Join").submit
+                #[a.button--join(href="https://join.slack.com/t/planningcenter/shared_invite/enQtNTk5NzMyNzIxNzQ0LWZlY2Q2NDQyNThjYzg5ZmYxYzI3NzJkZmUyZWM3NTQ4NjAwM2FiMzc4ODRlNzUzOTY1YjY2MmVhODc5ZjIwYWU") Join the Slack Community]
 
 
         .full-shelf
